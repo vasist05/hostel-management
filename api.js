@@ -3,7 +3,7 @@
  * Provides clean async methods to communicate with the Node.js/Express backend.
  */
 
-const API_BASE_URL = window.STAYEASE_API_URL || 'http://localhost:5000/api';
+const API_BASE_URL = window.STAYEASE_API_URL || (typeof window !== 'undefined' && window.location.protocol.startsWith('http') ? '/api' : 'http://localhost:5000/api');
 
 async function apiRequest(endpoint, options = {}) {
   const url = `${API_BASE_URL}${endpoint}`;

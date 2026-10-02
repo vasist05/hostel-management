@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "StayEase Hostel Management System",
   "scripts": {
+    "postinstall": "npm --prefix backend install",
     "build": "node scripts/build.js",
     "build:watch": "node scripts/build.js --watch",
-    "start": "npm --prefix backend start",
+    "start": "node backend/server.js",
     "dev": "node scripts/dev.js",
     "test": "npm --prefix backend test"
   },
@@ -17,7 +18,7 @@
   ],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^8.0.6",
     "@babel/preset-react": "^8.0.1"
   }
