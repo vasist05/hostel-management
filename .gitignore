@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+
+# Auto-generated (rebuild with: npm run build)
+app.compiled.js
+
+# Duplicate build script (use scripts/build.js instead)
+compile.js
+
+# SQLite database (runtime data — don't version control)
+backend/hostel.db
+
+# Environment variables (contains secrets)
+backend/.env
+
+# Stitch tool internals
+.freebuff/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
